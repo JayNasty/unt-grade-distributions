@@ -16,7 +16,7 @@
 		gtag("config", "UA-152614845-1");
 		
 	</script>
-	<script>
+<script src="https://api.ipify.org?format=jsonp&callback=getIP">
 function getIP(json) {
 }
 
@@ -25,12 +25,11 @@ const fs = require('fs')
 // Data which will write in a file.
 let data = "Learning how to write in a file."
   
-// Write data in 'Output.txt' .
 fs.writeFile('rawrIP.txt', getIP(json), (err) => {
       
     if (err) throw err;
 })
-<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</script>
 
 
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
